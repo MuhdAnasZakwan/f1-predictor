@@ -21,6 +21,7 @@ input_data = pd.DataFrame([{
 input_data = input_data[features]
 
 if st.button('Predict Podium Finish'):
+    # asked AI here since I'm confused between predict and predict_proba
     prob = model.predict_proba(input_data)[0][1]
     prediction = model.predict(input_data)[0]
 
